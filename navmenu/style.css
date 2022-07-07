@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  flex: 1;
+  position: fixed;
+  background-image: url(img1.jpg);
+
+  background-position: center;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  overflow-x: auto;
+}
+
+.nav__link {
+  display: flex;
+  flex: 1;
+  /* flex-direction: column; */
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  font-size: 1.1em;
+  justify-content: space-evenly;
+  background-color: rgba(60, 90, 29, 0.221);
+  transition: background-color 300ms ease;
+  min-width: 150px;
+  flex-wrap: nowrap;
+}
+
+.nav__link:hover {
+  background-color: rgba(96, 221, 119, 0.265);
+}
+.nav__link:active {
+  background-color: rgba(96, 221, 132, 0.452);
+}
+
+.cta {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 0 0 15px;
+  transition: all 200ms ease;
+}
+
+.cta:hover {
+  color: rgb(255, 255, 255);
+}
+.cta:active {
+  color: rgb(93, 255, 139);
+}
+
+.img {
+  min-width: 35px;
+}
+
+.li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 200ms ease;
+}
+
+.li:hover {
+  transform: scale(1.08);
+}
